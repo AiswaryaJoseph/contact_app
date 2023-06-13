@@ -1,0 +1,32 @@
+<!-- <p>view-contact works!</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-4"><i class="fa-solid fa-eye fa-xs  me-3 text-danger"></i>View Contact</h1>
+            <p class="" style="text-align: justify;">Contact management is the process of storing and tracking data on customers and leads. In addition to providing quick access to customer data, investing in contact management can help you grow and diversify your customer base.</p>
+
+        </div> <!--rcol end-->
+    </div><!--row end-->
+    <div class="row"> <!--2nd row start-->
+        <div class="col-8 mt-5"> <!--form-col start-->
+            <ul class="list-group">
+                <li class="list-group-item">Name:- {{contact.name}}</li>
+                <li class="list-group-item">Email:- {{contact.email}}</li>
+                <li class="list-group-item">Mobile:-  {{contact.phone}}</li>
+                <li class="list-group-item">Company:- {{contact.company}}</li>
+                <li class="list-group-item">Title:- {{contact.title}}</li>
+                <li class="list-group-item">Group:-  {{groupName}}</li>
+              </ul>
+        </div> <!--form-col end-->
+        <div class="col-4">
+<!-- image -->
+<img height="300px" src="{{contact.photo}}" alt="">
+<!-- https://www.clipartmax.com/png/full/144-1442660_caucasian-female-head-woman-person-icon-woman-3d-icon-png.png -->
+        </div>
+        <!-- button -->
+        <div>
+            <a routerLink="/"  class="btn btn-danger mt-5"><i class="fa-solid fa-circle-chevron-left fa-xl"></i></a> <!--goback button-->
+        </div>
+    </div><!--2nd row end-->
+</div> <!--container end-->
+

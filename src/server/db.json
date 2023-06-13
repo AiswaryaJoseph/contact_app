@@ -1,0 +1,68 @@
+{
+  "contacts": [
+    {
+      "id": "c1",
+      "name": "Aiswarya Jose",
+      "email": "ais@gmail.com",
+      "company": "ABC Company",
+      "phone": "987657546",
+      "photo": "https://cdn3d.iconscout.com/3d/premium/thumb/female-employee-5143568-4308132.png",
+      "title": "hr",
+      "groupId": "3"
+    },
+    {
+      "id": "c2",
+      "name": "Sam James",
+      "email": "sam@gmail.com",
+      "company": "ABC Company",
+      "phone": "987646646",
+      "photo": "https://cdn3d.iconscout.com/3d/premium/thumb/politician-5691521-4741062.png?f=webp",
+      "title": "hr",
+      "groupId": "1"
+    },
+    {
+      "id": "56",
+      "name": "Rohit R",
+      "email": "rohit@gmail.com",
+      "company": "EFG Company",
+      "phone": "987650000",
+      "photo": "https://cdn3d.iconscout.com/3d/premium/thumb/employee-4722980-3930446.png",
+      "title": "hr",
+      "groupId": "2"
+    },
+    {
+      "id": "c4",
+      "name": "Sunil",
+      "email": "sunil@gmail.com",
+      "company": "ABC Company",
+      "phone": "9876564320",
+      "photo": "https://cdn3d.iconscout.com/3d/premium/thumb/employee-man-8610358-6812099.png?f=webp",
+      "title": "Developer",
+      "groupId": "3"
+    },
+    {
+      "groupId": "2",
+      "id": "43",
+      "name": "Joshi",
+      "phone": "7896543210",
+      "email": "joshi@gmail.com",
+      "company": "PY Company",
+      "title": "Developer",
+      "photo": "https://cdn3d.iconscout.com/3d/premium/thumb/working-employee-at-home-4637848-3864094.png"
+    }
+  ],
+  "group": [
+    {
+      "id": "1",
+      "name": "family"
+    },
+    {
+      "id": "2",
+      "name": "company"
+    },
+    {
+      "id": "3",
+      "name": "friends"
+    }
+  ]
+}

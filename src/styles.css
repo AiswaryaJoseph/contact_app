@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Cookie&family=Dancing+Script:wght@700&family=Dongle&family=Oleo+Script&family=Pacifico&family=Rajdhani&family=Shrikhand&family=Ubuntu&display=swap');
+
+h1{
+    font-family: 'Dongle', sans-serif;
+}

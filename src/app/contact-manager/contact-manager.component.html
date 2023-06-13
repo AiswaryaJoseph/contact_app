@@ -1,0 +1,73 @@
+<!-- <p>contact-manager works!</p> -->
+<h6 class="text-danger mt-4 text-end me-5"><i class="fa-regular fa-calendar fa-lg"></i>: {{loginDate | date:'short'}}</h6>
+<div class="container">
+    <!-- Heading and add user button -->
+    <div class="row"> <!--row 1 start-->
+        <div class="col">
+           
+            <h1 class="text-center mt-4">Contact Management System</h1>
+            <p style="text-align: justify;">Contact management is the process of recording contacts' details and
+                tracking their interactions with a business. Such systems have gradually evolved into an aspect of
+                customer relationship management (CRM) systems, which allow businesses to improve sales and service
+                levels leveraging a wider range of data. The primary purpose of contact management software is to record
+                contact information in a central location to be easily accessed and updated. This information may
+                include names, addresses, phone numbers, email addresses, and social media profiles.</p>
+            <a routerLink="/contact/add" style="float: right;" class=" btn btn-danger "><i class="fa-solid fa-person-circle-plus fa-xl"></i>
+                Add Contact</a>
+        </div>
+    </div> <!--row 1 end-->
+    <!-- search user and search button -->
+    <div class="row"><!--row -2 start-->
+        <div class="col-6">
+            <!-- <input (change)="nameChange()" type="text" placeholder="Search Your Contact" class="form-control"> -->
+            <input (keyup)="search($event)" type="text" placeholder="Search Your Contact" class="form-control">
+
+
+        </div>
+       
+    </div> <!--row-2 end-->
+<!-- string interpollation -->
+<!-- <pre>
+    {{allContacts|json}}
+</pre>
+
+<pre>
+    {{heading}}
+</pre>
+
+{{heading}} -->
+
+    <!-- 3rd row for card designing -->
+    <div class="row mt-4"> <!--row 3 start-->
+        <div class="col-5" *ngFor="let contact of allContacts | filter:searchKey:'name'">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="row"><!--inner row in 3rd row-->
+                        <div class="col-4">
+                            <img width="100%"
+                                src="{{contact.photo}}" alt="">
+<!-- https://simg.nicepng.com/png/small/207-2074901_woman-icon-avatar-icon.png -->
+                        </div>
+                        <div class="col-8">
+                            <ul class="list-group">
+                                <li class="list-group-item">Name: {{contact.name}}
+                                    <a routerLink="/contact/view/{{contact.id}}" style="float:right;"><i class="fa-solid fa-eye text-success"></i></a>
+                                </li>
+                                <li class="list-group-item">Mobile: {{contact.phone}}
+                                    <a routerLink="/contact/update/{{contact.id}}" style="float:right;"><i class="fa-solid fa-user-pen text-primary"></i></a>
+                                </li>
+                                <li class="list-group-item">Email:{{contact.email}}
+                                    <a (click)="deleteContact(contact.id)" style="float:right"><i class="fa-sharp fa-solid fa-trash text-danger"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--inner row of 3rd ends-->
+
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!--row 3 end-->
+</div><!--container end-->
